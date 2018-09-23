@@ -131,6 +131,18 @@ form elements
 
 ![html-form](html-form.png)
 
+autocomplete 属性规定表单或输入字段是否应该自动完成。
+
+您可以把表单的 autocomplete 设置为 on，同时把特定的输入字段设置为 off，反之亦然
+```
+<form action="action_page.php" autocomplete="on">
+   First name:<input type="text" name="fname"><br>
+   Last name: <input type="text" name="lname"><br>
+   E-mail: <input type="email" name="email" autocomplete="off"><br>
+   <input type="submit">
+</form> 
+```
+
 ## 表单元素属性
 
 value 属性: 规定输入字段的初始值
