@@ -8,10 +8,11 @@
 			表格标签
 			布局标签
 			头标签
+			框架
 		HTML注释
+		JavaScript引用
+		CSS引用
 		
-
-
 
 ## Web页面概念
 
@@ -161,6 +162,9 @@ footer Copyright ? asushiye.com
 
 ### 头标签
 
+![html-header](html-header.png)
+
+```
 <head>
   <base href="http://www.w3school.com.cn/i/" />
   <base target="_blank" />
@@ -171,9 +175,13 @@ footer Copyright ? asushiye.com
   <meta name="Keywords" content="">
   <meta name="Description" content="">
 
-</head>
+  <link rel="stylesheet" type="text/css" href="mystyle.css" />
 
+</head>
+```
 base标签，第一个表示页面URL地址，基本地址，后面的图片，链接，CSS及JS引用填写相当路径就行
+
+一定要放最前面
 
 实例如下
 
@@ -214,6 +222,54 @@ expires:31 Dec 2008
 
 ```
 
+
+
+
+### 框架
+
+先了解框架，后面了解内联框架
+
+#### 框架
+用于将网页分割成多个部分来显示不同内容
+
+```
+垂直方向
+
+<html>
+
+<frameset cols="25%,50%,25%">
+
+  <frame src="/example/html/frame_a.html">
+  <frame src="/example/html/frame_b.html">
+  <frame src="/example/html/frame_c.html">
+
+</frameset>
+
+</html>
+
+水平方向
+<html>
+
+<frameset rows="25%,50%,25%">
+
+  <frame src="/example/html/frame_a.html">
+  <frame src="/example/html/frame_b.html">
+  <frame src="/example/html/frame_c.html">
+
+</frameset>
+
+</html>
+
+```
+
+#### 内联框架
+
+可以在网页中显示网页
+
+`<iframe src="demo_iframe.htm" width="200" height="200" frameborder="0"></iframe>`
+
+
+
 ## HTML注释
 
 `<!-- 在此处写注释 -->`
@@ -221,4 +277,88 @@ expires:31 Dec 2008
 
 
 
+## JavaScript引用
 
+JavaScript 已经浏览器默认脚本语言，JavaScript脚本必须位于 <script> 与 </script> 标签之间。
+
+您可以在 HTML 文档中放入不限数量的JavaScript脚本。
+
+通常的做法是JavaScript 脚本放入 <head> 部分中，或者放在页面 <body>底部。
+
+这样就可以把它们安置到同一处位置，不会干扰页面的内容。
+
+### 在head引用
+
+```
+<html>
+<head>
+<script type="text/javascript">
+function message()
+{
+alert("该提示框是通过 onload 事件调用的。")
+}
+</script>
+</head>
+
+<body onload="message()">
+
+</body>
+</html>
+
+```
+
+若是放在body中，建议放在最后面，这样就可以确保在body元素创建之后再执行脚本。
+
+### 引用外部文件
+```
+<html>
+<head>
+</head>
+<body>
+<script src="/js/example_externaljs.js"></script>
+</body>
+</html>
+```
+
+## CSS引用
+
+
+### Html引用样式
+
+```
+<head>
+<style type="text/css">
+body {background-color:yellow}
+p {color:blue}
+</style>
+</head>
+```
+
+### 引入外部文件
+
+```
+<head>
+  <base href="http://www.w3school.com.cn/i/" />
+  <base target="_blank" />
+
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+
+  <link rel="stylesheet" type="text/css" href="mystyle.css" />
+
+</head>
+```
+
+### CSS优先级说明
+
+所有的样式会根据下面的规则层叠于一个新的虚拟样式表中，其中数字 4 拥有最高的优先权。
+
+1. 浏览器缺省设置
+2. 外部样式表
+3. 内部样式表（位于 <head> 标签内部）
+4. 内联样式（在 HTML 元素内部）
+
+后面的章节我们给几个典型案例
