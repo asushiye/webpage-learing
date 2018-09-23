@@ -59,13 +59,13 @@ HTML已经定义很多元素，每个元素定义很属性。
 
 |HTML标签|符合|实例|
 |-|-|-|
-|标题|&lth1&gt - &lth6&gt|实例&lth1&gtThis is a heading&lt/h1&gt|
-|分隔线|&lthr&gt|&lthr/&gt|
-|段落|&ltp&gt|实例&ltp&gt锻炼&ltp/&gt|
-|链接|&lta&gt|&lta href="url" target="_blank"&gtLink text&lt/a&gt|
-|图片|&ltimg&gt|&ltimg src="boat.gif" alt="Big Boat"&gt 与背景图区别，其中背景图放在标签属性 background="/i/eg_background.jpg" |
-|块级元素|&ltdiv&gt|它是可用于组合其他 HTML 元素的容器|
-|文本元素|&ltspan&gt|可用作文本的容器,为CSS提供设置部分文本样式|
+|标题|h1 - h6|实例h1This is a heading/h1|
+|分隔线|hr|hr/|
+|段落|p|实例p锻炼p/|
+|链接|a|a href="url" target="_blank"Link text/a|
+|图片|img|img src="boat.gif" alt="Big Boat" 与背景图区别，其中背景图放在标签属性 background="/i/eg_background.jpg" |
+|块级元素|div|它是可用于组合其他 HTML 元素的容器|
+|文本元素|span|可用作文本的容器,为CSS提供设置部分文本样式|
 
 
 ### 列表标签
