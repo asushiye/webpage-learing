@@ -1,6 +1,6 @@
-# webpage HTML
+# webpage JavaScript
 
-## HTML   HTML快速入门  ------ chapter-01-01
+## JavaScript  快速入门  ------ chapter-02-01
 
 		Web页面概念
 		HTML文档
@@ -15,7 +15,7 @@
 		JavaScript引用
 		CSS引用
 
-## HTML HTML-Form   ------ chapter-01-02
+## JavaScript HTML-Form   ------ chapter-02-02
 
 		常用表单元素
 			input元素
@@ -25,7 +25,7 @@
 		表单属性
 		表单元素属性
 
-## HTML 实战   ------ chapter-01-03
+## JavaScript 实战   ------ chapter-01-03
 
 		后台管理
 
