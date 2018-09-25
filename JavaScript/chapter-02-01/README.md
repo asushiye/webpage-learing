@@ -6,6 +6,7 @@
 			类型定义
 			类型转换
 		函数
+		JS&DOM对象
 
 ## 概念
 JavaScript 是属于网络的脚本语言！
@@ -131,3 +132,9 @@ document.getElementById("demo").innerHTML=myFunction(4,3);
 </body>
 </html>
 ```
+
+## JS&DOM对象
+
+参考更多JS和DOM对象
+
+http://www.w3school.com.cn/jsref/index.asp
