@@ -7,12 +7,21 @@
 
 ## 概念
 
-Font Awesome只为Bootstrap设计的完美图标
+Font Awesome只为Bootstrap设计的完美图标和字体
 
 效果如图所示
 ![font-awesome-bootstrap](font-awesome-bootstrap.png)
 
 一组使用bootstrap，另外一组使用font-awesome
+
+代码如下：
+
+```
+<a class="btn" href="#" >Reload</a>
+
+<a class="btn" href="#"> <i class="icon-repeat"></i> Reload</a>
+```
+
 
 官网地址:  http://www.bootcss.com/p/font-awesome/#
 
