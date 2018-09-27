@@ -6,9 +6,15 @@
 
 ## 概念
 
-Ace Admin官网 http://ace.jeka.by/
+大全：http://ctm.ouyeelbuy.com/
 
-Ace Admin Git  https://github.com/bopoda/ace
+GIT：https://github.com/bopoda/ace
+
+官网：http://ace.jeka.by
+
+参考：https://www.cnblogs.com/LeeScofiled/p/6733625.html
+
+官网文档： http://ctm.ouyeelbuy.com/docs/index.html#intro
 
 一个后台管理系统布局如下
 
